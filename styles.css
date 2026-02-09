@@ -22,11 +22,19 @@ body {
 
 
 .sidebar {
-    border: 2px solid black;
     grid-row: 1/4;
-    padding: 10px;
+    padding: 15px 20px;
+    background: rgba(25, 146, 212);
+    color: white;
 }
 
+.sidebar img {
+    filter: brightness(0) invert(1);
+}
+
+.sidebar div {
+    border: none;
+}
 
 header {
     border: 2px solid red;
@@ -47,13 +55,13 @@ main {
     margin-top: 3rem;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1r;
-    gap: 10px;
+    gap:20px;
 }
 
 .branding {
     display: grid;
-    margin-top: 3rem;
-    gap: 10px;
+    margin-top: 4rem;
+    gap: 20px;
 }
 
 div {
@@ -88,4 +96,28 @@ div {
 
 img {
     height: 2em;
+}
+
+.headerGrid > div {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 3em;
+}
+
+input {
+    height: 2em;
+    width: 100%;
+}
+
+#one {
+    align-items: center;
+    gap: 5px;
+}
+
+#two {
+    justify-self: right;
+    gap: 20px;
 }
