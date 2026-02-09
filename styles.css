@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-rows: .6fr 1fr 1fr;
+}
+
+.sidebar {
+    border: 2px solid black;
+    grid-row: 1/4;
+}
+
+header {
+    border: 2px solid red;
+    grid-column:2/4;
+}
+
+main {
+    border: 2px solid blue;
+    grid-area:2/2/4/4;
+}
