@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -15,13 +17,16 @@ body {
     display: grid;
     grid-template-columns: .5fr 1fr 1fr;
     grid-template-rows: .6fr 1fr 1fr;
+    font-family: "Roboto", sans-serif;
 }
+
 
 .sidebar {
     border: 2px solid black;
     grid-row: 1/4;
     padding: 10px;
 }
+
 
 header {
     border: 2px solid red;
@@ -74,4 +79,13 @@ div {
 .projectGrid > div  {
     height: 22vh;
     padding: 10px;
+}
+
+.sidebar > div > div{
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 2em;
 }
