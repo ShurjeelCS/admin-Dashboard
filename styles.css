@@ -39,7 +39,9 @@ body {
 header {
     grid-column:2/4;
     padding: 0px 75px;
-    
+    box-shadow: 0px 5px 4px 1px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
 }
 
 main {
@@ -50,6 +52,10 @@ main {
     padding: 30px 75px;
     gap: 10px;
     background: rgba(226, 232, 240);
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 span {
@@ -85,17 +91,51 @@ div {
 
 .projects {
     grid-area: 1/1/3/2;
+    /* border: 1px solid black; */
+}
+
+main>div > p {
+    padding:0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.trending {
+    margin-top: 20px;
 }
 
 .projectGrid {
+    margin-top: 19px;
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
-    gap: 10px
+    gap: 40px
+}
+
+.maintenance {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.3);
+    padding: 30px;
+    margin-top: 19px;
+    margin-left: 20px;
+}
+
+#trending {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.3);
+    padding: 30px;
+    margin-left: 20px;
 }
 
 .projectGrid > div  {
-    height: 22vh;
-    padding: 10px;
+    /* margin-top: 1em; */
+    height: 20vh;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.3);
+    
 }
 
 .sidebar > div > div{
@@ -131,9 +171,16 @@ input {
     gap: 20px;
 }
 
+#three {
+    /* border: 1px solid black; */
+    align-items: start;
+}
+
 #four {
     /* border: 1px solid red; */
     justify-content: right;
+    margin-top: 10px;
+    align-items: start;
     display: flex;
     gap: 20px;
 }
@@ -141,9 +188,11 @@ input {
 button {
     background: #1992d4;
     color: white;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 30px;
+    /* padding: -10px; */
     border: none;
+    height: 45px;
     width: 100px;
     justify-self: right;
+    font-size: 1.2em;
 }
